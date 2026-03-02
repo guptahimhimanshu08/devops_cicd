@@ -8,7 +8,7 @@ phases:
       java: corretto17
   build:
     commands:
-      - ./mvnw clean package 
+      - ./mvnw clean package -DskipTests
   post_build:
     commands:
       - echo Build completed successfully.

@@ -2,15 +2,13 @@ version: 0.2
 
 phases:
   install:
-    # commands: 
-    #   - echo Installing dependencies...
-    #   - apt-get update -y
-    #   - apt-get install -y maven
+    commands: 
+      - chmod +x mvnw
     runtime-versions:
       java: corretto11
   build:
     commands:
-      - mvn clean package -DskipTests
+      - ./mvnw clean package -DskipTests
   post_build:
     commands:
       - echo Build completed successfully.

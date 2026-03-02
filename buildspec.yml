@@ -6,7 +6,7 @@ phases:
       java: corretto11
   build:
     commands:
-      - ./mvnw clean package -DskipTests
+      - mvn clean package -DskipTests
   post_build:
     commands:
       - echo Build completed successfully.

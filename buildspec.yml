@@ -5,7 +5,7 @@ phases:
     commands:
       - chmod +x mvnw
     runtime-versions:
-      java: corretto11
+      java: corretto17
   build:
     commands:
       - ./mvnw clean package 

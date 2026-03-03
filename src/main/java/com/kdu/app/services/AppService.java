@@ -6,6 +6,6 @@ import org.springframework.stereotype.Service;
 public class AppService {
     
     public String getAppVersion() {
-        return "0.1.0";
+        return "0.1.1";
     }
 }
